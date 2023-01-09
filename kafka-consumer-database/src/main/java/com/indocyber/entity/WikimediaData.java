@@ -14,6 +14,7 @@ public class WikimediaData {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column(name = "wikiEventData", length = 100000)
     @Lob
     private String wikiEventData;
 
